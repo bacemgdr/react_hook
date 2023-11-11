@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
-
+import MovieslistView from "./components/MovieList";
+import FilterMovie from "./components/FilterMovie";
+import { DefautlMovies } from "./components/Movie";
 function App() {
+  /* movieslist state take by default the list from Movies file */
+  const [movies, setMovies] = useState(DefautlMovies)
+  /* 2 state for filtring by title/rating */
+  const [filterbytitle, setFilterbytitle] = useState("")
+  const [filterbyrating, setFilterbyrating] = useState(0)
+
+  /* function to add new movie to the movies list */
+  const addMovie = (newMovie) => {
+    setMovies([newMovie, ...movies]);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* first row to display the filtring components */}
+      <div class="row">i
+        <FilterMovie
+          setFilterbytitle={setFilterbytitle}
+          setFilterbyrating={setFilterbyrating}
+          rating={filterbyrating}
+          addMovie={addMovie}
+        />
+      </div>
+      <div class="row">
+        {/* second row to display the movies list */}
+        <MovieslistView
+          moviesList={movies}
+          titlefilter={filterbytitle}
+          ratingfilter={filterbyrating}
+        />
+      </div>
     </div>
   );
 }
