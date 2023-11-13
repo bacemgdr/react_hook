@@ -12,7 +12,7 @@ function MovieCardView(props) {
   return (
     /* Movie Card */
     <Card bg="dark" className="movie-card">
-      <img src={movie.posterURL} alt="" />
+      <img  className="card-img-top" src={movie.posterURL} alt="" />
       <Card.Body>
         <Card.Title className="text-success" >{movie.title}</Card.Title>
         <Card.Text className="description-color" >
@@ -24,7 +24,7 @@ function MovieCardView(props) {
       <Stack direction="horizontal" gap={3}>
         
           <div className="p-2 ms-auto">
-          <h6>Rating</h6>
+          <h6 >Rating</h6>
             <Badge bg="secondary">
               <Rating name="half-rating-read"  value= {movie.rating} precision={0.5} readOnly  />
             </Badge>
