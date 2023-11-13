@@ -15,20 +15,20 @@ export const DefautlMovies = [
         title: "Elite",
         description: "Élite créée par Darío Madrona et Carlos Montero. La série se déroule à Las Encinas, un lycée fictif où l'élite espagnole et du monde entier viennent étudier. L'intrigue se concentre autour de trois étudiants de classe ouvrière inscrits à l école dans le cadre d un programme de bourses d études et leurs riches camarades de class",
         posterURL: "https://fr.web.img2.acsta.net/pictures/21/05/24/17/52/1035233.jpg",
-        rating: "8"
+        rating: "6",
     },
 
     {
         title: "1899",
         description: "Octobre 1899 à Londres, des migrants de diverses origines quittent l'Europe sur le bateau à vapeur Kerberos (Cerbère) pour un voyage de sept jours. Ils espèrent démarrer une nouvelle vie à New York et vivre le « rêve américain ». Après avoir reçu un message, Eyk Larsen, le capitaine du Kerberos, décide de dévier sa route pour porter secours au Prometheus (Prométhée), un navire similaire de la même compagnie porté disparu depuis quatre mois. Le voyage va alors virer au cauchemar.",
         posterURL: "https://f4.bcbits.com/img/a2782416906_10.jpg",
-        rating: "7"
+        rating: "7",
     },
 
     {
         title: "Squid Game",
         description: "Tentés par un prix alléchant en cas de victoire, des centaines de joueurs désargentés acceptent de s'affronter lors de jeux pour enfants aux enjeux mortels.",
         posterURL: "https://img.etimg.com/thumb/width-640,height-480,imgsize-100374,resizemode-75,msid-101086701/news/international/us/squid-game-season-2-release-date-cast-netflix-reveals-key-details/squid-game-season-2.jpg",
-        rating: "5"
+        rating: "5",
     },
 ];

@@ -8,14 +8,14 @@ function FilterMovie({ setFilterbytitle, setFilterbyrating, rating, addMovie }) 
 
         <div className="searchBar">
             <AddMovies addMovie={addMovie} />
-            {/* search text field to filter movie by title */}
+            {/* Filtrage by Title */}
             <input
                 className="inputsearch"
                 type="text"
                 placeholder="Search movie by title"
                 onChange={(e) => setFilterbytitle(e.target.value)}
             />
-            {/* rating field to filter movie by rating */}
+            {/* Filtrage by Rating */}
             <Badge bg="secondary">
                 <Rating
                     name="half-rating"

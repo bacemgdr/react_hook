@@ -14,7 +14,7 @@ import '../App.css';
 function AddMovies({ addMovie }) {
     const [show, setShow] = useState(false);
 
-    /* 4 state for movie variable */
+    
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [rating, setRating] = useState(0);
@@ -24,14 +24,14 @@ function AddMovies({ addMovie }) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    /* a function to save the new movie */
+    /* a function Save Movie */
     const handleclic = () => {
         addMovie({ title, description, posterURL, rating });
         handleClose();
     };
     return (
         <>
-            {/* a button to open the add movie modal */}
+            {/*  button Add */}
         
             <button class="custom-btn btn-3"  startIcon={<AddIcon/>} onClick={handleShow}><span>Add Movie</span></button>
             

@@ -6,10 +6,11 @@ import Stack from 'react-bootstrap/Stack';
 import Rating from '@mui/material/Rating';
 import Badge from 'react-bootstrap/Badge';
 
+
 function MovieCardView(props) {
   const movie = props.movie
   return (
-    /* a card to display echt movie variable */
+    /* Movie Card */
     <Card bg="dark" className="movie-card">
       <img src={movie.posterURL} alt="" />
       <Card.Body>
@@ -20,12 +21,12 @@ function MovieCardView(props) {
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <Stack direction="horizontal" gap={3}>
+      <Stack direction="horizontal" gap={3}>
         
           <div className="p-2 ms-auto">
           <h6>Rating</h6>
             <Badge bg="secondary">
-              <Rating name="half-rating-read"  rating value= {movie.rating} precision={0.5}  />
+              <Rating name="half-rating-read"  value= {movie.rating} precision={0.5} readOnly  />
             </Badge>
           </div>
         </Stack>
